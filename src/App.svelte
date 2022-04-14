@@ -47,7 +47,7 @@
 	let clicked = []
 	let foundPairs = 0
 
-	$: won = foundPairs == (GRID_SIZE_X*GRID_SIZE_Y)/2 ? true : false
+	$: won = foundPairs == (GRID_SIZE_X*GRID_SIZE_Y) / 2 ? true : false
 
 	function handleClick(x,y) {
 		if (won || grid[x][y].flipped) { return }
